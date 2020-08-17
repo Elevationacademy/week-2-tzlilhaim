@@ -1,0 +1,96 @@
+#container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 10fr 1fr;
+    grid-template-areas:
+        "l h"
+        "l m"
+}
+
+#chat-list{
+    grid-area: l;
+    background-color: purple;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas: "h" "m";
+}
+
+#list-header{
+    padding: 20%;
+    grid-area: h;
+}
+
+#list-main{
+    grid-area: m;
+    display: grid;
+    padding: 10%;
+}
+
+.list-item{
+    display: grid;
+    background-color: plum;
+    height: 25%;
+}
+
+#chat-history{
+    grid-area: h;
+    background-color: lightgray;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.message-item{
+    height: 100%;
+    padding: 5%;
+}
+
+.message{
+    display: grid;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 100px;
+    grid-template-columns: 3fr 1fr;
+}
+
+.text{
+    font-weight: bold;
+    font-size: large;
+}
+
+.time{
+    font-size: small;
+    display: grid;
+    text-align: right;
+    padding: inherit;
+}
+
+.sent{
+    float: right;
+    background-color: green;
+}
+
+.received{
+    float: left;
+    background-color: gray;
+}
+
+#messenger{
+    grid-area: m;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+#chat-input{
+    outline: none;
+    padding: 10px 10px;
+
+}
+
+#send{
+    background-color: purple;
+    height: 100%;
+}
