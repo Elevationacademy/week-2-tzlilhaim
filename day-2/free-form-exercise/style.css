@@ -1,0 +1,144 @@
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: "h" "m" "f";
+    font-family: 'Raleway', sans-serif;
+}
+
+#header{
+    grid-area: h;
+    display: grid;
+    background-color: gray;
+    grid-template-columns: 1fr 3fr 3fr 3fr;
+}
+
+.header-item{
+    padding: 10%;
+    font-size: large;
+}
+button{
+    margin: 5%;
+    background-color: #68504462;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #6850448a;
+    color: white;
+}
+
+.selected{
+    background-color: #685044;
+    color: white;
+}
+
+#main{
+    grid-area: m;
+    background-color: lavender;
+    padding: 5%;
+    display: grid;
+    grid-gap: 10%;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+#nav{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #68504462;
+    opacity: 50;
+}
+
+.nav-item{
+    padding: 10%;
+    border: solid 1px black;
+}
+
+#text-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #68504462;
+    padding: 5%;
+    grid-gap: 5%;
+}
+
+.text-item{
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.song-title{
+    font-weight: bold;
+    font-size: large;
+}
+
+.lyrics{
+    font-size: medium;
+}
+
+#info-container{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 10%;
+}
+
+.info-item{
+    background-color: #68504462;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "info-a ." ". info-c";
+    padding: 5%;
+}
+
+.info-title{
+    font-weight: bold;
+    font-size: large;
+    padding: 5%;
+}
+
+.info-content{
+    grid-area: info-c;
+}
+
+.avatar{
+    border-radius: 100%;
+    background-color: #685044;
+    width: 50px;
+    height: 50px;
+    grid-area: info-a;
+}
+
+#header-avatar{
+    background-image: url(file:///Users/tzlilhaim/code/bootcamp/personal-exercises/week-2/week-2-tzlilhaim/day-2/free-form-exercise/assets/header-logo.png);
+    background-color: white;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-position: center;
+}
+
+
+#blogger-info{
+    display: grid;
+    grid-template-rows: 2fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "info-a ." ". info-c";
+}
+
+#blogger-info .avatar{
+    background-image: url(file:///Users/tzlilhaim/code/bootcamp/personal-exercises/week-2/week-2-tzlilhaim/day-2/free-form-exercise/assets/blogger-avatar.png);
+    background-size: 100%;
+}
+
+#artist-info .avatar{
+    background-image: url(file:///Users/tzlilhaim/code/bootcamp/personal-exercises/week-2/week-2-tzlilhaim/day-2/free-form-exercise/assets/artist-avatar.jpeg);
+    background-size: 100%;
+}
+
+#footer{
+    grid-area: f;
+    background-color: gray;
+}
