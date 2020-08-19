@@ -1,0 +1,30 @@
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: purple;
+    display: inline-block;
+    text-align: center;
+  }
+
+#blue-on-hover{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    color: white;
+    background-color: gray;
+    display: inline-block;
+    text-align: center; 
+}
+
+.organize-exercises{
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.spot-check-11{
+    margin: 5px;
+    border: solid 1px gray;
+    padding: 5px;
+}
