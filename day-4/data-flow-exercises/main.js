@@ -5,12 +5,10 @@ const posts = [
 
 const render = () => {
     const wall = $("#wall")
-    let wallUpdate = ``
-    for (let post of posts) {
-        wallUpdate += `<div class='posts'>${post.name + ": " + post.text}</div>`
-    }
     wall.empty()
-    wall.append(wallUpdate)
+    for (let post of posts) {
+        wall.append(`<div class='posts'>${post.name + ": " + post.text}</div>`)
+    }
 }
 
 render()
